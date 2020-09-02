@@ -1,0 +1,52 @@
+<div class="container-fluid" style="padding: 0vw 0vw 0vw 0vw;">
+   <app-header></app-header>
+
+<div class="container-fluid" class="padding: 0vw 0vw 0vw 0vw">
+
+       <div class="container-fluid" style="text-align: center;">
+                   <p class="display-1">My Orders</p>
+       </div>
+<div class="container-fluid" class="padding: 0vw 0vw 0vw 0vw">
+
+       <div class="container-fluid" *ngIf="cart.length == 0" style="text-align: center;">
+                   <p>There is nothing in Order page</p>
+       </div>
+
+
+
+      <div class="container-fluid" *ngFor="let i of cart">
+        <div class="card w-100" style="margin-top: 0.5vw; margin-bottom: 0.5vw;">
+          <div class="card-body">
+          <div class="row" style="margin-left: 0px;margin-right: 0px; margin-top: 1vw;margin-bottom: 1vw;">
+                            <div class="col-xs-12 col-sm-12 col-md-3 col-lg-3">
+                                  <img src="http://localhost:3006/{{i.product_image}}" style="width:250px;" class="img-thumbnail">
+                            </div>
+                            <div class="col-xs-12 col-sm-12 col-md-9 col-lg-9">
+                                  <a style="
+                                  font-family: Arial, Helvetica, sans-serif;
+                                  text-decoration: none;" routerLink="#"><b>{{i.product_name}}</b>
+                                  <br>
+                                  <br>
+                                  <br>
+                                  <b>Rs.<span>{{i.product_price}}</span></b><br>
+                                  </a>
+                            </div>
+           </div>
+           </div>
+        </div>
+      </div>
+
+      <div class="container-fluid">
+                  <div class="row">
+                          <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+                                      <hr width="100%">
+                          </div>
+                          <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12" style="text-align: center;">
+                                      <p><b style="color: blue;">Total Price:{{total}}</b></p>
+                          </div>
+                  </div>
+      </div>
+</div>
+
+<app-footer></app-footer>
+</div>

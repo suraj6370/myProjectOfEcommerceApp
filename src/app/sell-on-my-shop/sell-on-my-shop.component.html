@@ -1,0 +1,96 @@
+<div class="container-fluid" style="padding: 0vw 0vw 0vw 0vw;">
+  <app-header></app-header>
+  <div class="container-fluid">
+  <div class="row" style="height: auto; margin: 0.4vw 1vw 0.011vw 1vw;padding: 0% 0% 0% 0%;">
+    <div class="col-xs-4 col-sm-4 col-md-4 col-lg-4">
+
+    </div>
+    <div class="col-xs-4 col-sm-4 col-md-4 col-lg-4">
+             <img src="assets/appIcon.jpg"
+              style="border-radius: 50%;width: 30%; height: 30%;margin-top:0%;margin-left: 35% ;
+              margin-right:35%;padding: 0% 0% 0% 0%;position: relative;top: 3vw;"
+              alt="appIcon">
+              <p style="text-align: center;
+                        font-size:1vw;font-weight: bold;
+                        color: black;position: relative;top:3.5vw;">
+              MyShop</p>
+    </div>
+    <div class="col-xs-4 col-sm-4 col-md-4 col-lg-4">
+
+    </div>
+  </div>
+      <div class="row">
+
+            <div class="col-xs-2 col-sm-2 col-md-3 col-lg-3">
+
+            </div>
+
+            <div class="col-xs-8 col-sm-8 col-md-6 col-lg-6">
+
+              <form #postValue="ngForm" (ngSubmit)="onCreatePost(postValue.value)" style="padding: 1vw 1vw 1vw 1vw;margin: 1vw 1vw 1vw 1vw;" class="border">
+                <div class="form-group">
+
+                  <label ngModel name="name" for="e18">Product name</label>
+                  <input type="text" class="form-control" id="e18"  placeholder="Enter product name">
+
+                </div>
+                <div class="form-group">
+                  <label for="e14">Upload Frontview</label>
+                  <input ngModel name="fProductImagePath" type="file" class="form-control-file" id="e14" multiple>
+                </div>
+
+                <div class="form-group">
+
+                  <label for="e19">Product MRP</label>
+                  <input ngModel name="mrp" type="number" class="form-control" id="e19" placeholder="Enter product MRP in Rs.">
+
+                </div>
+                <div class="form-group">
+
+                  <label for="e20">Product Price</label>
+                  <input  ngModel name="price" type="number" class="form-control" id="e20" placeholder="Enter product Price in Rs.">
+
+                </div>
+
+                <div class="form-group">
+
+                  <label for="e21">Number of Product in Stock</label>
+                  <input  ngModel name="stock" type="number" class="form-control" id="e21" placeholder="Enter Number Of Product In Stock">
+
+                </div>
+                <div class="form-group">
+                  <label for="e34">Category</label>
+                  <select ngModel name="category" class="form-control" id="e34" >
+
+                    <option  value="'5f36a05eba809b02a8080268'">Electronics</option>
+                    <option value="'5f36a0d0ba809b02a808026b'">Clothes</option>
+                    <option  value="'5f36a0a0ba809b02a8080269'">Beauty</option>
+                    <option  value="'5f36a0a9ba809b02a808026a'">Toys</option>
+
+
+                  </select>
+                </div>
+                <div class="form-group">
+                  <label for="e17">product description</label>
+                  <textarea ngModel name="description" class="form-control" id="e17" rows="3"></textarea>
+                </div>
+
+                <div class="form-group">
+
+                  <label for="e21">Enter Password</label>
+                  <input ngModel name="password" type="password" class="form-control" id="e21" placeholder="Enter Password">
+                </div>
+
+                <button type="submit" class="btn btn-primary"  style="margin-left: 40%;">upload</button>
+              </form>
+            </div>
+
+            <div class="col-xs-2 col-sm-2 col-md-3 col-lg-3">
+
+            </div>
+
+      </div>
+    </div>
+
+    <app-footer></app-footer>
+</div>
