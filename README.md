@@ -24,7 +24,7 @@ Run `ng e2e` to execute the end-to-end tests via [Protractor](http://www.protrac
 
 ## project demo
 
-youtube like [demo]([Protractor](http://www.protractortest.org/).).
+youtube like [demo](https://youtu.be/OGTsLhzxtKo).
 
 ## Further help
 
