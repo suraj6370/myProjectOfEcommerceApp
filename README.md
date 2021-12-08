@@ -29,3 +29,7 @@ youtube like [demo](https://youtu.be/OGTsLhzxtKo).
 ## Further help
 
 To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI README](https://github.com/angular/angular-cli/blob/master/README.md).
+
+![2](https://user-images.githubusercontent.com/64355350/145155382-4455560a-f68b-49d5-bed9-6ae5a17e317a.png)
+![3](https://user-images.githubusercontent.com/64355350/145155361-3f4cd80f-af56-4317-8c40-78062b79568a.png)
+![1](https://user-images.githubusercontent.com/64355350/145155389-248fe220-9d2b-4b42-865e-1fc5556f8015.png)
